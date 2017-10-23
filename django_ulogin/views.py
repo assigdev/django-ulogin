@@ -231,4 +231,4 @@ class PostBackViewFixed(PostBackView):
                     registered=registered,
                     ulogin_user=identity,
                     ulogin_data=response)
-        return redirect(self.request.GET.get(REDIRECT_FIELD_NAME) or '/')
+        return redirect('/')
